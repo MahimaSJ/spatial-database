@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews Result</title>
+</head>
+<body>
+    <h1>Reviews for Landmark</h1>
+    <ul>
+        {% for review in reviews %}
+            <li>{{ review[0] }} - Rating: {{ review[1] }} - Date: {{ review[2] }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
